@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.weather{
+  font-family: 'Lobster', cursive;
+  width:100vw;
+  height:100vh;
+  color:rgb(6, 46, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to right, rgb(71, 206, 71),rgb(66, 97, 66));
+}
+.weather-city{
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.weather-forecast{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-evenly;
+}
+.weather-btn{
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  height: 60%;
+  width: 35%;
+  outline: none;
+  color:inherit;
+  border-radius: 20%;
+  cursor: pointer;
+  background-image: linear-gradient(to right, rgb(8, 241, 97),rgb(34, 182, 34));
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.weather-card{
+  background: rgba(207, 207, 197,0.1);
+  border:0.1rem solid white;
+  border-radius: 5%;
+  height: 45%;
+  width: 20%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+}
+.weather-cards{
+  display: flex;
+  flex-direction: row;
+}
+img{
+  width:150px;
+}
+.back{
+  position: absolute;
+  top:10%;
+  left:10%;
+  width:7%;
+  height:5%;
+  cursor: pointer;
+  background-color: #07440a;
+  color:#eee;
+  outline: none;
+  border-radius: 10%;
+  font-family: 'Lobster', cursive;
+}
+.back:hover{
+  background-color: #07440a;
+  color:#56ec5e;
+  border: 2px solid #021603;
+}
