@@ -9,7 +9,7 @@
   height:100vh;
   color:rgb(6, 46, 1);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-image: linear-gradient(to right, rgb(71, 206, 71),rgb(66, 97, 66));
@@ -23,6 +23,7 @@
 .weather-forecast{
   width: 100%;
   height: 100%;
+  font-size: medium;
   display: flex;
   flex-direction: row;
   align-items:center;
@@ -47,26 +48,22 @@ a{
   background: rgba(207, 207, 197,0.1);
   border:0.1rem solid white;
   border-radius: 5%;
-  height: 45%;
-  width: 20%;
-  max-width: 30%;
+  height: 65%;
+  width: 30%;
+  max-width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.1rem;
 }
-.weather-cards{
-  display: flex;
-  flex-direction: row;
-}
 img{
   width:150px;
 }
 .back{
   position: absolute;
-  top:10%;
-  left:10%;
+  top:3%;
+  left:5%;
   width:7%;
   height:5%;
   cursor: pointer;
@@ -80,4 +77,25 @@ img{
   background-color: #07440a;
   color:#56ec5e;
   border: 2px solid #021603;
+}
+@media (max-width: 600px) {
+  .weather{
+    font-size: smaller;
+  }
+  .weather-forecast {
+    font-size: smaller;
+  }
+  img{
+    width: 50px;
+  }
+  .weather-card{
+    width: 33%;
+  }
+  .back{
+    width: 10%;
+    height:7%;
+  }
+  .weather-city{
+    font-size: 2rem;
+  }
 }
