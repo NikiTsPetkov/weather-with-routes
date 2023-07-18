@@ -57,6 +57,9 @@ a{
   justify-content: space-evenly;
   font-size: 1.1rem;
 }
+/* .weather-card p,.weather-card h3{
+  padding: 5px 0;
+} */
 img{
   width:150px;
 }
@@ -78,18 +81,23 @@ img{
   color:#56ec5e;
   border: 2px solid #021603;
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .weather{
     font-size: smaller;
   }
   .weather-forecast {
     font-size: smaller;
+    flex-direction: column;
   }
-  img{
-    width: 50px;
+  .weather-btn,.weather-card{
+    width: 60%;
+    max-width: 60%;
+    margin-bottom: 20px;
+    max-height: 60%;
   }
-  .weather-card{
-    width: 33%;
+  .weather-three-days{
+    flex-direction: row;
+    justify-content: space-between;
   }
   .back{
     width: 10%;
@@ -97,5 +105,18 @@ img{
   }
   .weather-city{
     font-size: 2rem;
+  }
+  .small-screen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 49%;
+    height: 100%;
+  }
+  .small-screen h4,.small-screen p{
+    margin:20px 0;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
